@@ -5,7 +5,7 @@ from machine import Pin                             # For select pins
 led = machine.Pin(2, machine.Pin.OUT)               # Standard onboard led pin
 
 def toggle(p):
-    p.value(not p.value())
+    p.value(not p.value())                          # Toggle the pin. If is on will be off, else is off will be on
 
 while True:
     toggle(led)
